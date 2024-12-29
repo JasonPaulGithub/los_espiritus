@@ -1,10 +1,10 @@
-package com.jason.quickstart;
+package com.jason.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class QuickstartApplicationTests {
+class ProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
