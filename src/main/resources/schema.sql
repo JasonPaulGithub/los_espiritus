@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS books;
 DROP TABLE IF EXISTS authors;
 
 -- Create the sequence for author ids
-CREATE SEQUENCE authors_id_seq;
+-- CREATE SEQUENCE authors_id_seq;
 
 -- Create the authors table
 CREATE TABLE authors (
