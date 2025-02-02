@@ -21,7 +21,7 @@ public class TestDataUtil {
         return Author.builder()
                 .id(1L)
                 .name("authorA")
-                .age(27)
+                .age(51)
                 .build();
     }
 
@@ -41,35 +41,35 @@ public class TestDataUtil {
                 .build();
     }
 
-    public static Book createTestBook() {
+    public static Book createTestBook(final Author author) {
         return Book.builder()
                 .isbn("78-1-2345-6789-1")
                 .title("The Shadow in the Attic")
-                .authorId(1L)
+                .authorId(author)
                 .build();
     }
 
-    public static Book createTestBookA() {
+    public static Book createTestBookA(final Author author) {
         return Book.builder()
                 .isbn("978-1-2345-6789-0")
                 .title("The Shadow in the Attic Prequel")
-                .authorId(1L)
+                .authorId(author)
                 .build();
     }
 
-    public static Book createTestBookB() {
+    public static Book createTestBookB(final Author author) {
         return Book.builder()
                 .isbn("78-1-2345-6789-1")
                 .title("The Shadow in the Attic")
-                .authorId(2L)
+                .authorId(author)
                 .build();
     }
 
-    public static Book createTestBookC() {
+    public static Book createTestBookC(final Author author) {
         return Book.builder()
                 .isbn("78-1-2345-6789-2")
                 .title("The Shadow in the Attic Sequel")
-                .authorId(3L)
+                .authorId(author)
                 .build();
     }
 }
